@@ -5,10 +5,39 @@
   margin-left: 3.5%;
   height: auto;
  
-  margin-top: 126%;
+  margin-top: 118%;
   
 }
-
+.container-plat3 {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-left: 3.5%;
+  height: auto;
+ 
+  margin-top: 118%;
+  
+}
+.container-gold3 {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-left: 3.5%;
+  height: auto;
+ 
+  margin-top: 118%;
+  
+}
+.container-silver {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-left: 3.5%;
+  height: auto;
+ 
+  margin-top: 118%;
+  
+}
 .container-g4 {
   position: relative;
   text-align: center;
@@ -16,7 +45,7 @@
   bottom: 5vw;
   height: auto;
 
-  margin-top: 196%;
+  margin-top: 188%;
   height: auto;
   
 }
@@ -25,7 +54,7 @@
   color: black;
   margin-left: 3.5%;
   height: auto;;
-  margin-top: 252%;
+  margin-top: 243%;
   
   
 }
@@ -33,7 +62,7 @@
   position: relative;
   text-align: center;
   color: black;
-  margin-top: 317%;
+  margin-top: 307%;
   height: auto;
   
 }
@@ -43,7 +72,7 @@
   color: black;
   margin-left: 3.5%;
   height: auto;
-  margin-top: 375%;
+  margin-top: 367%;
  
   
 }
@@ -52,7 +81,7 @@
   color: white;
 }
 .marg-pl{
-  margin-top: 440%;
+  margin-top: 434%;
   color: white;
 }
 .marg2{
@@ -60,10 +89,18 @@
   color: white;
 }
 .marg-b{
-margin-top:190vw;
+margin-top:180vw;
 color: white;
 }
 
+.marg-gold{
+  margin-top:180vw;
+  color: white;
+  }
+.marg-silver{
+  margin-top:180vw;
+  color: white;
+  }
   
 @media (max-width:800px) {
   .container-g3 {
@@ -73,10 +110,39 @@ color: white;
     margin-left: 3.5%;
     height: auto;
    
-    margin-top:320%;
+    margin-top:284%;
     
   }
-  
+  .container-plat3 {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-left: 3.5%;
+    height: auto;
+   
+    margin-top:295%;
+    
+  }
+  .container-gold3 {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-left: 3.5%;
+    height: auto;
+   
+    margin-top:300%;
+    
+  }
+  .container-silver {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-left: 3.5%;
+    height: auto;
+   
+    margin-top: 295%;
+    
+  }  
 .container-g4 {
   position: relative;
   text-align: center;
@@ -84,7 +150,7 @@ color: white;
   bottom: 5vw;
   height: auto;
 
-  margin-top: 470%;
+  margin-top: 445%;
   height: auto;
   
 }
@@ -96,7 +162,7 @@ color: white;
   bottom: 5vw;
   height: auto;
 
-  margin-top: 620%;
+  margin-top: 585%;
   height: auto;
   
 }
@@ -108,7 +174,7 @@ color: white;
   bottom: 5vw;
   height: auto;
 
-  margin-top:770%;
+  margin-top:730%;
   height: auto;
   
 }
@@ -120,18 +186,26 @@ color: white;
   bottom: 5vw;
   height: auto;
 
-  margin-top: 920%;
+  margin-top: 878%;
   height: auto;
   
 }
   .marg-b{
-    margin-top:460%;
+    margin-top:420%;
 
     }
-    
+    .marg-gold{
+      margin-top:435%;
   
+      }
+      
+    .marg-silver{
+      margin-top:435%;
+      color: white;
+      }
+      
     .marg-pl{
-      margin-top:1050%;
+      margin-top:1010%;
   
       }
       

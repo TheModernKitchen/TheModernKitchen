@@ -1,6 +1,6 @@
 .center-pl-s {
     position: absolute;
-    top: 48%;
+    top: 36%;
     z-index: 2000;
     width: 25%;
     margin-left: 9%;
@@ -16,7 +16,7 @@
   
   .center-pl2-s{
     position: absolute;
-    top: 65%;
+    top: 50%;
     z-index: 2000;
     width: 50%;
     margin-left: 9%;
@@ -30,38 +30,7 @@
   
     
   }  
-  .center-pl-s2 {
-    position: absolute;
-    top: 0%;
-    z-index: 0;
-    width: 0%;
-    margin-left: 0%;
-    text-align: left;
-    font-size: 0vw;
-    padding-left: 0%;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(174, 174, 174, 0.6);
-    opacity: 1.9;
-    font-family: 'Poppins';
-    
-  }
-  
-  .center-pl2-s2{
-    position: absolute;
-    top: 0%;
-    z-index:0;
-    width: 0%;
-    margin-left: 0%;
-    text-align: left;
-    padding: 0vw;
-    font-size: 0vw;
-    color: rgba(255, 255, 255, 1);
-    background-color:rgba(51, 44, 46, 0.4);
-    font-family: 'Poppins';
-    opacity: 0;
-  
-    
-  } 
+   
   .img-front-silver { 
     width: 0%;
     height: auto;
@@ -77,9 +46,9 @@
     height: auto;
     opacity: 1;
   }
-  .center-pl-s2 {
+  .center-pl-s {
     position: absolute;
-    top: 35%;
+    top: 30%;
     z-index: 2000;
     width: 35%;
     margin-left: 7%;
@@ -93,9 +62,9 @@
     
   }
   
-  .center-pl2-s2{
+  .center-pl2-s{
     position: absolute;
-    top: 52%;
+    top: 42%;
     z-index: 2000;
     width: 70%;
     margin-left: 7%;
@@ -109,38 +78,4 @@
   
     
   }  
-  .center-pl-s {
-    position: absolute;
-    top: 0%;
-    z-index: 0;
-    width: 0%;
-    margin-left: 0%;
-    text-align: left;
-    font-size: 0vw;
-    padding-left: 0%;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(174, 174, 174, 0.6);
-    opacity: 1.9;
-    font-family: 'Poppins';
-    
-  }
-  
-  .center-pl2-s{
-    position: absolute;
-    top: 0%;
-    z-index:0;
-    width: 0%;
-    margin-left: 0%;
-    text-align: left;
-    padding: 0vw;
-    font-size: 0vw;
-    color: rgba(255, 255, 255, 1);
-    background-color:rgba(51, 44, 46, 0.4);
-    font-family: 'Poppins';
-    opacity: 0;
-  
-    
-  }  
- 
-
 }

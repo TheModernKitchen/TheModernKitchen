@@ -3,7 +3,7 @@
 
 .center-term {
     position: absolute;
-    top: 60%;
+    top: 35%;
     width: 35%;
     margin-left: 10%;
     text-align: center;
@@ -16,22 +16,7 @@
     
     
   }
-  .center-term-2 {
-    position: absolute;
-    top: 0%;
-    width: 0%;
-    margin-left: 0%;
-    text-align: center;
-    font-size: 0vw;
-    padding-right: 0vw;
-    color: white;
-    background-color: rgba(242, 146, 29, 0.6);
-    opacity: 0;
-    font-family: 'Poppins', sans-serif;
-    
-    
-  }
-  .logo-img { 
+   .logo-img { 
     width: 280px;
     height: auto;
   }
@@ -39,7 +24,7 @@
   .center-term-details{
       background-color: rgba(51, 44, 46, 0.4);
       height: auto; 
-      margin-top: 2%;
+      margin-top: -15%;
       margin-left: 16%;
       margin-right: 10%;
       margin-bottom: 3%;
@@ -87,11 +72,11 @@
     opacity: 1;
   }
   
-.center-term-2 {
+.center-term {
   position: absolute;
-  top: 60%;
+  top: 44%;
   width: 60%;
-  margin-left: 10%;
+  margin-left: 5%;
   text-align: center;
   font-size: 6vw;
   padding-right: 2.8vw;
@@ -102,23 +87,8 @@
   
   
 }
-.center-term {
-  position: absolute;
-  top: 0%;
-  width: 0%;
-  margin-left: 0%;
-  text-align: center;
-  font-size: 0vw;
-  padding-right: 0vw;
-  color: white;
-  background-color: rgba(242, 146, 29, 0.6);
-  opacity: 0.9;
-  font-family: 'Poppins', sans-serif;
-  
-  
-}
 .center-term-details{
-  margin-top: -5%;
+  margin-top: -24%;
   margin-left: 7.5%;
   margin-right: 10%;
   margin-bottom: 5%;

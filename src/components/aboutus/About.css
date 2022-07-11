@@ -28,8 +28,8 @@ body{
 
 .center-about {
     position: absolute;
-    top: 55%;
-    width:18%;
+    top: 42%;
+    width:28%;
     margin-left: 10%;
     padding-left: 1vw;
     padding-right: 3.3vw;
@@ -47,7 +47,7 @@ body{
   .center-about-details{
       background-color: rgba(51, 44, 46, 0.4);
       height: auto; 
-      margin-top: 5%;
+      margin-top: -8%;
       margin-left: 15%;
       margin-right: 15%;
       width: 70%;
@@ -65,8 +65,22 @@ body{
         font-size: 1vw;
     }
     @media (max-width:800px) {
+
+      .center-about {
+        top: 42%;
+        width:35%;
+        margin-left: 10%;
+        padding-left: 3%;
+        padding-right: 3.3vw;
+        text-align: left;
+        font-size: 5vw;
+        
+        
+      }
+    
+
       .center-about-details{
-        margin-top: 5%;
+        margin-top: -27%;
         margin-left: 10%;
         margin-right: 15%;
         width: 80%;

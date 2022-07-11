@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"; 
 import React from 'react';
 
-
+import { useEffect } from "react";
 import '../platinum/modal/Modal.css';
 
 import Modal from "./modals1/Modals1";
@@ -12,18 +12,18 @@ import useModal1 from "./modals1/useModal";
 import useModals2 from "./modals2/useModals2";
 import useModals3 from "./modals3/useModals3";
 
-import frontslide from './images/silverlogo.jpg' ;
-import kitchenlogo from '../mainpage/images/kitchenlogo.png' ;
+import frontslide from './images/silverlogo-min.jpg' ;
+import kitchenlogo from '../mainpage/images/kitchenlogo-min.png' ;
 
-import p1 from './images/s1.jpg' ;
-import p2 from './images/s2.jpg' ;
-import p3 from './images/s3.jpg' ;
-import p4 from './images/s4.jpg' ;
-import p5 from './images/s5.jpg' ;
-import p6 from './images/s6.jpg' ;
-import p7 from './images/s7.jpg' ;
-import p8 from './images/s8.jpg' ;
-import p9 from './images/s9.jpg' ;
+import p1 from './images/s1-min.jpg' ;
+import p2 from './images/s2-min.jpg' ;
+import p3 from './images/s3-min.jpg' ;
+import p4 from './images/s4-min.jpg' ;
+import p5 from './images/s5-min.jpg' ;
+import p6 from './images/s6-min.jpg' ;
+import p7 from './images/s7-min.jpg' ;
+import p8 from './images/s8-min.jpg' ;
+import p9 from './images/s9-min.jpg' ;
 
 import Footer from "../footer/Footer";
 
@@ -38,67 +38,110 @@ import '../platinum/gallery-layout.css';
 
 import '../platinum/gallery-layout-2.css';
 import '../platinum/center.css';
-import Header from './Header-silver'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 import './silver.css';
 
+import '../titanium/Header-tit.css';
+
 
 const Silver  = () => {
-
+  useEffect(() => {
+    // search-box open close js code
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+    
+    // sidebar open close js code
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+    navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+    }
+    
+    
+    // sidebar submenu open close js code
+    
+    
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+     navLinks.classList.toggle("show3");
+    }
+    
+    
+       }, []);
+    
   const {isShowing, toggle} = useModal1();
   const {isShowings2, toggles2} = useModals2();
   const {isShowings3, toggles3} = useModals3();
   
   return (
     <div>
-        
-        
-        <div className="container-main1">
-        <div className='center-pl-s'><b>Silver Collection</b></div>
+        <div className="container-main-main">
+    <img className='img-front-main-tit' src={frontslide} />
+    <div className='center-pl-s'><b>Silver Collection</b></div>
       <div className='center-pl2-s'>Our Silver Collection features the K-Series line of cabinets, which are designed with a timeless, traditional door profile and versatile color palette to give any kitchen an updated, classic look.</div>
    
-        <div className="nav-main">
-           
-           <div>
-           <img className='logo-img-m' src={kitchenlogo} />
-             </div>   
-             <div className='links-main'>
+ 
+      <div className="nav-main-main">
+    <nav className="nav">
+    <div class="navbar">
+ 
+      <i class='bx bx-menu'></i>
+      <div class="logo2"><img className="logo-main-main-tit"  src={kitchenlogo} /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links2">
+          <li>    <Link className="sub1" to="/"> Home</Link>
+       
+       </li>
          
-           
-         <Link className="link-main" to="/"> Home</Link>
-         <div className="dropdown">
-         <Link className="link-main" to="#">Cabinets&nbsp;&nbsp;<FontAwesomeIcon icon="fas fa-caret-down" /></Link>             <div className="dropdown-content">
-           <Link className="sub" to="/titainum">Titaninum Collection</Link>
-           <Link className="sub" to="/platinum">Platinum Collection</Link>
-           <Link className="sub" to="/gold">Gold Collection</Link>
-           <Link className="sub" to="/silver">Silver Collection</Link>
-             </div>
-          </div>
-         <Link className="link-main" to="/Contact"> Contact</Link>
-         <Link className="link-main" to="/Aboutus"> About</Link>
-              
-          </div>
-         </div>        
-    
-      <img className='img-front' src={frontslide} />
-          </div>
+          <li>
+          <Link className="sub1" to="#">Cabinets</Link>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li>   <Link className="sub" to="/titainum">Titaninum Collection</Link>
+        </li>
+              <li>  <Link className="sub" to="/platinum">Platinum Collection</Link>
+         </li>
+              <li><Link className="sub" to="/gold">Gold Collection</Link>
+  </li>
+              <li>           <Link className="sub" to="/silver">Silver Collection</Link>
+</li>
+            </ul>
+          </li>
+          <li><Link className="sub1"  to="/Contact"> Contact</Link>
+         </li>
+          <li>         <Link className="sub1"  to="/Aboutus"> About</Link>
+</li>
+<li><Link className="sub2" to="/feature">Benefits</Link>
 
-       
-       
-          <div className="container-main2">
-          <div className='center-pl-s2'><b>Silver Collection</b></div>
-      <div className='center-pl2-s2'>Our Silver Collection features the K-Series line of cabinets, which are designed with a timeless, traditional door profile and versatile color palette to give any kitchen an updated, classic look.</div>
-     
-         <img className='img-front-silver' src={frontslide} />
-       
-         <Header/>
- 
-           </div>
+         </li>
+          <li>        <Link className="sub2" to="/term">Terms & Conditions</Link>
+</li>
+
+        </ul>
+      </div>
       
+    </div>
+  </nav>
   
- 
+</div>
+      
+      
+          </div>
+        
+        
 
+
+        
           <div className="container-gall1">
 
 <div className="bottom-left-gall1"></div>
@@ -175,7 +218,7 @@ const Silver  = () => {
 
 
 
-<div className="container-g3">
+<div className="container-silver">
 <div className="bottom-left-gall1"></div>
 <div className="top-left-gall1"> <div className="rope-galls3">K-Espresso (KE)</div>
   <div className="top-left2-galls3">Our K-Espresso line provides the beauty of natural wood finish with darker espresso tones, giving kitchens an updated, modern look. As all Forevermark cabinets are designed with the utmost quality and durability, you can rest assured that your kitchen will be beautiful and functional for years to come.
@@ -227,7 +270,7 @@ const Silver  = () => {
 
 
 
-<div className="marg-b">m</div>
+<div className="marg-silver">m</div>
 
 
 

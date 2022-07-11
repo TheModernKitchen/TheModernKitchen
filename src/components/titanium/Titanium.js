@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"; 
 import React from 'react';
-
+import { useEffect } from "react";
 import '../platinum/modal/Modal.css';
 
 import Modalt1 from "../platinum/modal/Modalt1";
@@ -10,20 +10,19 @@ import useModalt1 from '../platinum/modal/useModalt1';
 import useModalt2 from '../platinum/modal/useModalt2';
 import useModalt3 from '../platinum/modal/useModalt3';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import frontslide from './images/tslide.jpg' ;
-import kitchenlogo from '../mainpage/images/kitchenlogo.png' ;
+import frontslide from './images/tslide-min.jpg' ;
+import kitchenlogo from '../mainpage/images/kitchenlogo-min.png' ;
 
-import p1 from './images/t1.jpg' ;
-import p2 from './images/t2.jpg' ;
-import p3 from './images/t3.jpg' ;
-import p4 from './images/t4.jpg' ;
-import p5 from './images/t5.jpg' ;
-import p6 from './images/t6.jpg' ;
-import p7 from './images/t7.jpg' ;
-import p8 from './images/t8.jpg' ;
-import p9 from './images/t9.jpg' ;
+import p1 from './images/t1-min.jpg' ;
+import p2 from './images/t2-min.jpg' ;
+import p3 from './images/t3-min.jpg' ;
+import p4 from './images/t4-min.jpg' ;
+import p5 from './images/t5-min.jpg' ;
+import p6 from './images/t6-min.jpg' ;
+import p7 from './images/t7-min.jpg' ;
+import p8 from './images/t8-min.jpg' ;
+import p9 from './images/t9-min.jpg' ;
 
 import Footer from "../footer/Footer";
 
@@ -39,11 +38,39 @@ import '../platinum/gallery-layout.css';
 
 
 import '../platinum/center.css';
-import Header from './Header-tit'
+import  './Header-tit.css'
 
 
 const Titaninum  = () => {
-
+  useEffect(() => {
+    // search-box open close js code
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+    
+    // sidebar open close js code
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+    navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+    }
+    
+    
+    // sidebar submenu open close js code
+    
+    
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+     navLinks.classList.toggle("show3");
+    }
+    
+    
+       }, []);
+    
   const {isShowingt1, togglet1} = useModalt1();
   
   const {isShowingt2, togglet2} = useModalt2();
@@ -51,51 +78,67 @@ const Titaninum  = () => {
   const {isShowingt3, togglet3} = useModalt3();
   return (
     <div>
-        
-        
-        <div className="container-main1">
-        <div className='center-pl'><b>Titaninum Collection</b></div>
+        <div className="container-main-main">
+    <img className='img-front-main-tit' src={frontslide} />
+    <div className='center-pl'><b>Titaninum Collection</b></div>
       <div className='center-pl2'>Our versatile and elegant Gold Collection cabinets come in an array of designs and finishes, perfect for elevating the style and feel of your kitchen. As all Forevermark cabinets are designed with the utmost quality and durability, you can rest assured that your kitchen will be beautiful and functional for years to come. Select styles feature Waterborne UV Finishes from Sherwin Williams and Greenguard Gold certification, which ensures that a product is acceptable for use in sensitive indoor places.</div>
-
-        <div className="nav-main">
-           
-           <div>
-           <img className='logo-img-m' src={kitchenlogo} />
-             </div>   
-             <div className='links-main'>
-         
-           
-         <Link className="link-main" to="/"> Home</Link>
-         <div className="dropdown">
-         <Link className="link-main" to="#">Cabinets&nbsp;&nbsp;<FontAwesomeIcon icon="fas fa-caret-down" /></Link>
-              <div className="dropdown-content">
-           <Link className="sub" to="/titainum">Titaninum Collection</Link>
-           <Link className="sub" to="/platinum">Platinum Collection</Link>
-           <Link className="sub" to="/gold">Gold Collection</Link>
-           <Link className="sub" to="/silver">Silver Collection</Link>
-             </div>
-          </div>
-         <Link className="link-main" to="/Contact"> Contact</Link>
-         <Link className="link-main" to="/Aboutus"> About</Link>
-              
-          </div>
-         </div>
-     
-    
-      <img className='img-front' src={frontslide} />
-          </div>
-
-
-          <div className="container-main2">
-          <div className='center-pl-2'><b>Titaninum Collection</b></div>
-      <div className='center-pl2-2'>Our versatile and elegant Gold Collection cabinets come in an array of designs and finishes, perfect for elevating the style and feel of your kitchen. As all Forevermark cabinets are designed with the utmost quality and durability, you can rest assured that your kitchen will be beautiful and functional for years to come. Select styles feature Waterborne UV Finishes from Sherwin Williams and Greenguard Gold certification, which ensures that a product is acceptable for use in sensitive indoor places.</div>
-
-         <img className='img-front-silver' src={frontslide} />
-       
-         <Header/>
+   
  
-           </div>
+  <div className="nav-main-main">
+    <nav className="nav">
+    <div class="navbar">
+ 
+      <i class='bx bx-menu'></i>
+      <div class="logo2"><img className="logo-main-main-tit"  src={kitchenlogo} /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links2">
+          <li>    <Link className="sub1" to="/"> Home</Link>
+       
+       </li>
+         
+          <li>
+          <Link className="sub1" to="#">Cabinets</Link>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li>   <Link className="sub" to="/titainum">Titaninum Collection</Link>
+        </li>
+              <li>  <Link className="sub" to="/platinum">Platinum Collection</Link>
+         </li>
+              <li><Link className="sub" to="/gold">Gold Collection</Link>
+  </li>
+              <li>           <Link className="sub" to="/silver">Silver Collection</Link>
+</li>
+            </ul>
+          </li>
+          <li><a className="sub1"  href="../contact/Contact.js">Contact</a>
+         </li>
+          <li>         <Link className="sub1"  to="/Aboutus"> About</Link>
+</li>
+<li><Link className="sub2" to="/feature">Benefits</Link>
+
+         </li>
+          <li>        <Link className="sub2" to="/term">Terms & Conditions</Link>
+</li>
+
+        </ul>
+      </div>
       
+    </div>
+  </nav>
+  
+</div>
+      
+      
+          </div>
+        
+        
+
+
+        
 
 
  

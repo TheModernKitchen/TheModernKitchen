@@ -15,7 +15,7 @@
   }
   .column4-main-page-center {
     float: left;
-    width: 56%;
+    width: 60%;
     height: 40vw;
     padding-right: 10vw;
     font-family: 'Poppins';
@@ -35,12 +35,15 @@
   .about-main-page-center{
     font-size:3.513909224011713vw;
     margin-top: 8%;
+    margin-left: 6%;
+    padding-bottom: 2.2vw;
      color: white;
       font-family: 'Poppins';
   }
   
   .p2-main-page-center{
     font-size: 1vw;
+    margin-left: 6%;
     font-family: 'Poppins';
     margin-top: -4%;
     
@@ -51,6 +54,7 @@
   .readmore-main-page-center{
     background-color: rgba(242, 146, 29, 0.6);
     width: 8vw;
+    margin-left: 6%;
     height: 2.4vw;
 
     font-family: 'Poppins', sans-serif;
@@ -89,8 +93,8 @@
   
   
   .img2-main-page-center { 
-    width: 70%;
-    margin-left: 72%;
+    width: 95%;
+    margin-left: 65%;
     height: auto;
     opacity: 0.9;
     
@@ -98,15 +102,16 @@
     padding-bottom: 5%;
   }
   .img12-main-page-center { 
-    width: 70%;
-    margin-left: 72%;
+    width: 95%;
+    
+    margin-left: 65%;
     font-family: 'Poppins';
     opacity: 0.9;
     padding-bottom: 5%;
   }
   .img3-main-page-center { 
     
-    width: 70%;
+    width: 95%;
     margin-left: 42%;
     padding-right: 20px;
     height: auto;
@@ -114,8 +119,8 @@
     padding-bottom: 5%;
   }
   .img13-main-page-center { 
-    width: 70%;
-    margin-left: 42%;
+    width: 95%;
+    margin-left: 60%;
 
     opacity: 0.9;
     padding-bottom: 5%;
@@ -181,7 +186,7 @@ margin-left: 0%;
     .p2-main-page-center{
       font-size: 0vw;
       font-family: 'Poppins', sa3serif;
-      margin-top: 0%;   margin-left: 35%;
+      margin-top: -8%;   margin-left: 35%;
     margin-left: 0%;      
       color: white;
      margin-right: 0%; 
@@ -241,8 +246,8 @@ margin-left: 0%;
     
     
     .img2-main-page-center { 
-      width: 80%;
-      margin-left: 65%;
+      width: 90%;
+      margin-left: 55%;
       height: auto;
       opacity: 0.9;
       
@@ -250,15 +255,15 @@ margin-left: 0%;
       padding-bottom: 5%;
     }
     .img12-main-page-center { 
-      width: 80%;
-      margin-left: 65%;
+      width: 90%;
+      margin-left: 55%;
       font-family: 'Poppins';
       opacity: 0.9;
       padding-bottom: 5%;
     }
     
     .img13-main-page-center { 
-      width: 80%;
+      width: 90%;
       margin-left: 42%;
        padding-top: 0%;
       opacity: 0.9;

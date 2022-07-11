@@ -7,10 +7,14 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: 'Poppins', sans-serif;
+
   }
   
   
   input[type=submit] {
+    font-family: 'Poppins', sans-serif;
+
     background-color: rgba(242, 146, 29, 0.9);
     color: white;
     padding: .8vw;
@@ -19,6 +23,7 @@ input[type=text], select, textarea {
     cursor: pointer;
     margin-left: 70vw;
     margin-top: -10vw;
+    font-weight: 500;
   }
   
   input[type=submit]:hover {
@@ -28,7 +33,7 @@ input[type=text], select, textarea {
   .container-contact-form {
     border-radius: 5px;
      padding: 13vw;
-     margin-top: -10vw;
+     margin-top: -22vw;
   }
   
   /* Create two equal columns that floats next to each other */
@@ -77,4 +82,44 @@ input[type=text], select, textarea {
           margin-top: -10vw;
         }
             }
+
+
+  @media (max-width:800px) {
+    input[type=text], select, textarea {
+      width: 120%;
+      padding: 12px;
+      margin-left: -7.5vw;
+      border: 2px solid rgba(242, 146, 29, 0.9);
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    .column-contact {
+      float: left;
+      width: 100%;
+  
+      
+    }
+    .margright{
+      margin-left: -9.5%;
+     
+      font-size: 3vw;
+    }
+    input[type=submit] {
+      margin-left: 28vw;
+      margin-top: 20vw;
+      font-size: 4vw;
+      width: 25vw;
+      padding: 2vw;
+    }
+    .container-contact-form {
+      border-radius: 5px;
+       padding: 13vw;
+       margin-top: -39vw;
+    }
+    
+            
+            }        
           

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import pla5 from '../images/pla5.jpg' ;
+import pla5 from '../images/pla5-min.jpg' ;
 const Modal5 = ({ isShowing5, hide5 }) => isShowing5 ? ReactDOM.createPortal(
   <React.Fragment>
     <div className="modal-overlay"/>

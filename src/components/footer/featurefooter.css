@@ -4,6 +4,12 @@
       background-color: rgba(51, 44, 46, 1);
       height: 8vw;
   }
+  
+  .footer-below-2{
+    position: relative;     
+    background-color: rgba(51, 44, 46, 1);
+    height: 0vw;
+}
   .logo-img-footer { 
       position: absolute;
     width: 20%;
@@ -30,63 +36,76 @@
     padding: .5vw;
     font-size: 1vw;
     color: white;
+    text-decoration: none;
+}
+.link-footer-link:hover{
+    color:rgba(242, 146, 29, 1);
 }
 .link-footer-link-term{
-    padding: .5vw;
-    font-size: 1vw;
+    padding: 0vw;
+    font-size: 0vw;
     margin-top: 0vw;
     color: white;
 }
-.top-term{
-    margin-top:-1.4vw;
-    margin-left: 19vw;
-      
-  }
-
-@media (min-width: 1px) and (max-width: 200px) {
-    .link-footer{
-        margin-top: 0px;
-    }
-
-    .footer-below{
-         height: 15vw;
-    }    
+.logo-img-footer-2 { 
+    position: absolute;
+  width: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  
 }
-
-@media (min-width: 201px) and (max-width: 230px) {
-    .link-footer{
-        margin-top: .5px;
-    }
+.footer-copyright-2{
+  position: absolute;
+  color: white;
+  font-size: 0vw;
+  margin-top: 0%;
+  margin-left: 0%;
 
 }
+.link-footer-2{
+  position: absolute;
+  margin-top: 0vw;
+  font-family: 'Poppins';
 
-@media (min-width: 231px) and (max-width: 381px) {
-    .link-footer{
-        margin-top: 1.5vw;
-    }
-    
+  margin-left: 0%;
 }
-@media screen and (min-device-width: 382px) and (max-device-width: 780px) {
-    .link-footer{
-        margin-top: 3.5vw;
-    }
+.link-footer-link-2{
+  padding: 0vw;
+  font-size: 0vw;
+  color: white;
+  text-decoration: none;
+}
+.link-footer-link:hover{
+  color:rgba(242, 146, 29, 1);
+}
+.link-footer-link-term-2{
+  padding: 0vw;
+  font-size: 0vw;
+  margin-top: 0vw;
+  color: white;
 }
 
 
 @media (max-width:800px){
-    .footer-below{
+    .footer-below-2{
         position: relative;     
         background-color: rgba(51, 44, 46, 1);
         height: 15vw;
     }
-    .logo-img-footer { 
+    
+  .footer-below{
+    position: relative;     
+    background-color: rgba(51, 44, 46, 1);
+    height: 0vw;
+}
+    .logo-img-footer-2 { 
         position: absolute;
       width: 22%;
       margin-left: 9%;
       margin-top: 2%;
       
     }
-  .footer-copyright{
+  .footer-copyright-2{
       position: absolute;
       color: white;
       font-size: 1.5vw;
@@ -94,30 +113,100 @@
       margin-left: 9.5%;
   
   }
-  .link-footer{
+  .link-footer-2{
       position: absolute;
-      margin-top: 4.2vw;
+      margin-top: 4.2%;
       font-family: 'Poppins';
   
       margin-left: 45%;
   }
-  .link-footer-link{
+  .link-footer-link-2{
       padding: 1vw;
       font-size: 2vw;
       margin-left: 2vw;
       color: white;
   }
-  .link-footer-link-term{
+
+  .link-footer-link-term-2{
     padding: 1vw;
+    position: absolute;
     font-size: 1.5vw;
-    
-    margin-left: 2vw;
+    margin-top: 9.5%;
+    margin-left: 75%;
     color: white;
 }
-  .top-term{
+.link-footer-link-term-2:hover{
+    color:rgba(242, 146, 29, 1);
+}
+  .top-term-2{
     margin-left:28vw;
  margin-top: .5vw;
 
   }
+  .logo-img-footer { 
+    position: absolute;
+  width: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
   
+}
+.footer-copyright{
+  position: absolute;
+  color: white;
+  font-size: 0vw;
+  margin-top: 0%;
+  margin-left: 0%;
+
+}
+.link-footer{
+  position: absolute;
+  margin-top: 0vw;
+  font-family: 'Poppins';
+
+  margin-left: 0%;
+}
+.link-footer-link{
+  padding: 0vw;
+  font-size: 0vw;
+  color: white;
+  text-decoration: none;
+}
+.link-footer-link:hover{
+  color:rgba(242, 146, 29, 1);
+}
+}   
+@media screen and (min-device-width: 382px) and (max-device-width: 780px) {
+    .link-footer-2{
+        margin-top: 5vw;
+    }
+    
+ 
+}
+
+@media (min-width: 231px) and (max-width: 381px) {
+    .link-footer-2{
+        margin-top: 2vw;
+    }
+    
+}
+
+@media (min-width: 201px) and (max-width: 230px) {
+    .link-footer-2{
+        margin-top: .5px;
+    }
+
+}
+
+@media (min-width: 1px) and (max-width: 200px) {
+    .link-footer-2{
+        margin-top: -4px;
+    }
+
+    .footer-below-2{
+         height: 15vw;
+    }    
+    
+    .footer-below{
+        height: 0vw;
+   }    
 }

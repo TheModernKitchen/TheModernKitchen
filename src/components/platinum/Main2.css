@@ -68,7 +68,7 @@ body {
   }
   .center-pl {
     position: absolute;
-    top: 48%;
+    top: 30%;
     z-index: 2000;
     width: 30%;
     margin-left: 9%;
@@ -83,7 +83,7 @@ body {
   
   .center-pl2{
     position: absolute;
-    top: 65%;
+    top: 45%;
     z-index: 2000;
     width: 60%;
     margin-left: 9%;
@@ -98,38 +98,7 @@ body {
   
     
   } 
-  .center-pl-2 {
-    position: absolute;
-    top: 0%;
-    z-index: 0;
-    width: 0%;
-    margin-left: 0%;
-    padding-left: 0%;
-    text-align: left;
-    font-size: 0vw;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(153, 188, 195, 0.5);
-    opacity: 1;
-    font-family: 'Poppins', sans-serif;    
-  }
   
-  .center-pl2-2{
-    position: absolute;
-    top: 0%;
-    z-index: 0;
-    width: 0%;
-    margin-left: 0%;
-    text-align: left;
-    padding: 0vw;
-    font-size: 0vw;
-    font-weight: 0;
-    color: rgba(255, 255, 255, 1);
-    background-color:rgba(83, 84, 85, .6);
-    font-family: 'Poppins', sans-serif;
-    opacity: 1;
-  
-    
-  } 
 .dembold{
 font-weight: 500;
 }
@@ -296,8 +265,10 @@ font-weight: 500;
 
   .container-gall1{
     margin-left: 3.5%;
+    top: -10vw;
 
   }
+  
   @media (max-width:800px){
   
     .nav-main {
@@ -471,12 +442,12 @@ font-weight: 500;
       opacity: 0;
      
     }
-    .center-pl-2 {
+    .center-pl {
       position: absolute;
-      top: 38%;
+      top: 25%;
       z-index: 2000;
       width: 40%;
-      margin-left: 2%;
+      margin-left: 3%;
       padding-left: 2%;
       text-align: left;
       font-size: 4vw;
@@ -486,12 +457,12 @@ font-weight: 500;
       font-family: 'Poppins', sans-serif;    
     }
     
-    .center-pl2-2{
+    .center-pl2{
       position: absolute;
-      top: 55%;
+      top: 40%;
       z-index: 2000;
       width: 80%;
-      margin-left: 2%;
+      margin-left: 3%;
       text-align: left;
       padding: .8vw;
       font-size: 2vw;
@@ -503,36 +474,5 @@ font-weight: 500;
     
       
     } 
-    .center-pl {
-      position: absolute;
-      top: 0%;
-      z-index: 0;
-      width: 0%;
-      margin-left: 0%;
-      padding-left: 0%;
-      text-align: left;
-      font-size: 0vw;
-      color: rgba(255, 255, 255, 1);
-      background-color: rgba(153, 188, 195, 0.5);
-      opacity: 1;
-      font-family: 'Poppins', sans-serif;    
-    }
-    
-    .center-pl2{
-      position: absolute;
-      top: 0%;
-      z-index: 0;
-      width: 0%;
-      margin-left: 0%;
-      text-align: left;
-      padding: 0vw;
-      font-size: 0vw;
-      font-weight: 0;
-      color: rgba(255, 255, 255, 1);
-      background-color:rgba(83, 84, 85, .6);
-      font-family: 'Poppins', sans-serif;
-      opacity: 1;
-    
-      
-    } 
+   
   }

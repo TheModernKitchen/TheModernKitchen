@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"; 
+import { useEffect } from "react";
 import React from 'react';
 import './modal/Modal.css';
 
@@ -18,32 +19,31 @@ import useModal5 from './modal/useModal5';
 import useModal6 from './modal/useModal6';
 import useModal7 from './modal/useModal7';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import frontslide from './images/platfront.jpg' ;
-import kitchenlogo from '../mainpage/images/kitchenlogo.png' ;
+import frontslide from './images/platfront-min.jpg' ;
+import kitchenlogo from '../mainpage/images/kitchenlogo-min.png' ;
 
-import p1 from './images/p1.jpg' ;
-import p2 from './images/p2.jpg' ;
-import p3 from './images/p3.jpg' ;
-import p4 from './images/p4.jpg' ;
-import p5 from './images/p5.jpg' ;
-import p6 from './images/p6.jpg' ;
-import p7 from './images/p7.jpg' ;
-import p8 from './images/p8.jpg' ;
-import p9 from './images/p9.jpg' ;
-import p10 from './images/p10.jpg' ;
-import p11 from './images/p11.jpg' ;
-import p12 from './images/p12.jpg' ;
-import p13 from './images/p13.jpg' ;
-import p14 from './images/p14.jpg' ;
-import p15 from './images/p15.jpg' ;
-import p16 from './images/p16.jpg' ;
-import p17 from './images/p17.jpg' ;
-import p18 from './images/p18.jpg' ;
-import p19 from './images/p19.jpg' ;
-import p20 from './images/p20.jpg' ;
-import p21 from './images/p21.jpg' ;
+import p1 from './images/p1-min.jpg' ;
+import p2 from './images/p2-min.jpg' ;
+import p3 from './images/p3-min.jpg' ;
+import p4 from './images/p4-min.jpg' ;
+import p5 from './images/p5-min.jpg' ;
+import p6 from './images/p6-min.jpg' ;
+import p7 from './images/p7-min.jpg' ;
+import p8 from './images/p8-min.jpg' ;
+import p9 from './images/p9-min.jpg' ;
+import p10 from './images/p10-min.jpg' ;
+import p11 from './images/p11-min.jpg' ;
+import p12 from './images/p12-min.jpg' ;
+import p13 from './images/p13-min.jpg' ;
+import p14 from './images/p14-min.jpg' ;
+import p15 from './images/p15-min.jpg' ;
+import p16 from './images/p16-min.jpg' ;
+import p17 from './images/p17-min.jpg' ;
+import p18 from './images/p18-min.jpg' ;
+import p19 from './images/p19-min.jpg' ;
+import p20 from './images/p20-min.jpg' ;
+import p21 from './images/p21-min.jpg' ;
 
 import Footer from "../footer/Footer";
 
@@ -53,19 +53,47 @@ import './Main2.css';
 
 import './gallery.css';
 
-import './gallery-layout.css';
 
 import './gallery-layout-2.css';
 import './gallery2.css';
 
 import './gallery3.css';
 import './center.css';
-import Header from './Header-plat'
+import './Header-plat.css'
 
 
 
 
 const Platinum = () => {
+  useEffect(() => {
+    // search-box open close js code
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+    
+    // sidebar open close js code
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+    navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+    }
+    
+    
+    // sidebar submenu open close js code
+    
+    
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+     navLinks.classList.toggle("show3");
+    }
+    
+    
+       }, []);
+ 
 
   const {isShowing1, toggle1} = useModal1();
   const {isShowing2, toggle2} = useModal2();
@@ -78,49 +106,64 @@ const Platinum = () => {
     <div>
         
         
-        <div className="container-main1">
-        <div className='center-pl'><b>Platinum Collection</b></div>
+        <div className="container-main-main">
+    <img className='img-front-main-tit' src={frontslide} />
+    <div className='center-pl'><b>Platinum Collection</b></div>
       <div className='center-pl2'><div className="textop">With classic comfort and sophisticated refinement, the Platinum Collection features an array of cabinet choices to beautifully update any kitchen. As all Forevermark cabinets are designed with the utmost quality and durability, you can rest assured that your kitchen will be beautiful and functional for years to come. Select styles feature Waterborne UV Finishes from Sherwin<br/>Williams and Greenguard Gold certification, which ensures that a product is acceptable for use in sensitive indoor places.</div></div>
     
-        <div className="nav-main">
-           
-           <div>
-           <img className='logo-img-m' src={kitchenlogo} />
-             </div>   
-             <div className='links-main'>
-         
-           
-         <Link className="link-main" to="/"> Home</Link>
-         <div className="dropdown">
-         <Link className="link-main" to="#">Cabinets&nbsp;&nbsp;<FontAwesomeIcon icon="fas fa-caret-down" /></Link>  
-           <div className="dropdown-content">
-           <Link className="sub" to="/titainum">Titaninum Collection</Link>
-           <Link className="sub" to="/platinum">Platinum Collection</Link>
-           <Link className="sub" to="/gold">Gold Collection</Link>
-           <Link className="sub" to="/silver">Silver Collection</Link>
-             </div>
-          </div>
-         <Link className="link-main" to="/Contact"> Contact</Link>
-         <Link className="link-main" to="/Aboutus"> About</Link>
-              
-          </div>
-         </div>
-          
-      
-      <img className='img-front' src={frontslide} />
-          </div>
-
-          <div className="container-main2">
-          <div className='center-pl-2'><b>Platinum Collection</b></div>
-      <div className='center-pl2-2'><div className="textop">With classic comfort and sophisticated refinement, the Platinum Collection features an array of cabinet choices to beautifully update any kitchen. As all Forevermark cabinets are designed with the utmost quality and durability, you can rest assured that your kitchen will be beautiful and functional for years to come. Select styles feature Waterborne UV Finishes from Sherwin<br/>Williams and Greenguard Gold certification, which ensures that a product is acceptable for use in sensitive indoor places.</div></div>
-    
-         <img className='img-front-silver' src={frontslide} />
+ 
+      <div className="nav-main-main">
+    <nav className="nav">
+    <div class="navbar">
+ 
+      <i class='bx bx-menu'></i>
+      <div class="logo2"><img className="logo-main-main-tit"  src={kitchenlogo} /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links2">
+          <li>    <Link className="sub1" to="/"> Home</Link>
        
-         <Header/>
- 
-           </div>
+       </li>
+         
+          <li>
+          <Link className="sub1" to="#">Cabinets</Link>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li>   <Link className="sub" to="/titainum">Titaninum Collection</Link>
+        </li>
+              <li>  <Link className="sub" to="/platinum">Platinum Collection</Link>
+         </li>
+              <li><Link className="sub" to="/gold">Gold Collection</Link>
+  </li>
+              <li>           <Link className="sub" to="/silver">Silver Collection</Link>
+</li>
+            </ul>
+          </li>
+          <li><a className="sub1"  href="../contact/Contact.js">Contact</a>
+         </li>
+          <li>         <Link className="sub1"  to="/Aboutus"> About</Link>
+</li>
+<li><Link className="sub2" to="/feature">Benefits</Link>
+
+         </li>
+          <li>        <Link className="sub2" to="/term">Terms & Conditions</Link>
+</li>
+
+        </ul>
+      </div>
       
- 
+    </div>
+  </nav>
+  
+</div>
+      
+      
+          </div>
+        
+    
 
 <div className="container-gall1">
 <div className="bottom-left-gall1"></div>
@@ -201,7 +244,7 @@ const Platinum = () => {
 
 
 
-<div className="container-g3">
+<div className="container-plat3">
 
 <div className="bottom-left-gall1"></div>
 <div className="top-left-gall1"> <div className="rope-gall3">Signature Pearl (SL)</div>

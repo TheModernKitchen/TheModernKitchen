@@ -6,10 +6,18 @@
   color: black;
   bottom: 5vw;
   height: auto;
-  margin-top: 70vw;
+  margin-top: 63vw;
   
 }
-
+.container-gold2 {
+  position: relative;
+  text-align: center;
+  color: black;
+  bottom: 5vw;
+  height: auto;
+  margin-top: 63vw;
+  
+}
 .ul1-gall2 {
     
   margin-left:0%;
@@ -216,8 +224,12 @@ margin-left: -10vw;
 
 .container-g2 {
   bottom: 5vw;
-  margin-top: 170vw;
+  margin-top: 153vw;
   
 }
-
+.container-gold2 {
+  bottom: 5vw;
+  margin-top: 143vw;
+  
+}
 }

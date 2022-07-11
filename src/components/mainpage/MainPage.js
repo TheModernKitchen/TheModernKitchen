@@ -1,28 +1,24 @@
 import { Link } from "react-router-dom"; 
 import React from 'react';
 import {Helmet}from"react-helmet-async";
-import logo1 from './images/logo1.svg' ;
-import { Route } from 'react-router-dom';
-import platinum from './images/plat.jpg' ;
-import titanium from './images/titanium.jpg' ;
-import gold from './images/gold.jpg' ;
-import silver from './images/silver.jpg' ;
-import collection from './images/collection.png' ;
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import logo1 from './images/mainpage-min.jpg' ;
+import platinum from './images/plat-min.jpg' ;
+import titanium from './images/titanium-min.jpg' ;
+import gold from './images/gold-min.jpg' ;
+import silver from './images/silver-min.jpg' ;
 import collection1 from './images/collection1.png' ;
-import collection2 from './images/collection2.png' ;
-import mask1 from './images/Maskgroup1.svg' ;
+import mask1 from './images/mask1-min.jpg' ;
 
-import logo4 from './images/logo-center-4.jpg' ;
-import mask2 from './images/Maskgroup2.svg' ;
-import mask3 from './images/Maskgroup3.svg' ;
-import mask4 from './images/Maskgroup4.svg' ;
-import kitchenlogo from './images/kitchenlogo.png' ;
+import logo4 from './images/logo-center-4-min.jpg' ;
+import mask2 from './images/mask2-min.jpg' ;
+import mask3 from './images/mask3-min.jpg' ;
+import mask4 from './images/mask4-min.jpg' ;
+import kitchenlogo from './images/kitchenlogo-min.png' ;
 import Footer from "../footer/Footer";
-import Header from "./Header";
+
 import { useEffect } from "react";
 import './Main.css';
+import './Navbar.css';
 import './over.css';
 import './dropdown.css';
 import './center.css';
@@ -36,13 +32,37 @@ import './center4.css';
 
 const MainPage = () => {
   useEffect(() => {
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+// sidebar submenu open close js code
+
+
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
 
 
    }, []);
   return (
     <div>
          <Helmet>
-     <title>Modern Kitchen</title>
+     <title>The Modern Kitchen</title>
      <link rel="canonical" href="/"/>
      <meta charset="utf-8"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
@@ -51,57 +71,68 @@ const MainPage = () => {
 
           
     </Helmet>        
-    <div className="container-main1">
-             
-    <div className='center21-main'><b>Our Commitment<br/>to Quality</b></div>
-        <div className='center22-main'>We offer Ready to Assemble (RTA) cabinets that are KCMA <br/>certified. KCMA certified cabinets are recognized in the <br/>marketplace as a quality product able to perform after  a<br/> rigorous battery to tests simulating years of household use.</div>
-        <div className='center3-main'><b>BROWSE OUR CABINETS  </b></div>
+    <div className="container-main-main">
+    <img className='img-front-main' src={logo1} />
+    <div className='center21-main-main'><b>Our Commitment<br/>to Quality</b></div>
+    <div className='center22-main-main'>We offer Ready to Assemble (RTA) cabinets that are KCMA <br/>certified. KCMA certified cabinets are recognized in the <br/>marketplace as a quality product able to perform after  a<br/> rigorous battery to tests simulating years of household use.</div>
+        <div className='center3-main-main'><b>BROWSE OUR CABINETS  </b></div>
  
-        <div className="nav-main">
-           
-           <div>
-           <img className='logo-img-m' src={kitchenlogo} />
-             </div>   
-             <div className='links-main'>
+  <div className="nav-main-main">
+    <nav>
+    <div class="navbar">
+ 
+      <i class='bx bx-menu'></i>
+      <div class="logo"><img className="logo-main-main"  src={kitchenlogo} /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li>    <Link className="sub1" to="/"> Home</Link>
+       
+       </li>
          
-           
-         <Link className="link-main" to="/"> Home</Link>
-         <div className="dropdown">
-         <Link className="link-main" to="#">Cabinets&nbsp;&nbsp;<FontAwesomeIcon icon="fas fa-caret-down" /></Link>  
-           <div className="dropdown-content">
-           <Link className="sub" to="/titainum">Titaninum Collection</Link>
-           <Link className="sub" to="/platinum">Platinum Collection</Link>
-           <Link className="sub" to="/gold">Gold Collection</Link>
-           <Link className="sub" to="/silver">Silver Collection</Link>
-             </div>
-          </div>
-         <Link className="link-main" to="/Contact"> Contact</Link>
-         <Link className="link-main" to="/Aboutus"> About</Link>
-              
-          </div>
-         </div>
-          
+          <li>
+          <Link className="sub1" to="#">Cabinets</Link>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li>   <Link className="sub" to="/titainum">Titaninum Collection</Link>
+        </li>
+              <li>  <Link className="sub" to="/platinum">Platinum Collection</Link>
+         </li>
+              <li><Link className="sub" to="/gold">Gold Collection</Link>
+  </li>
+              <li>           <Link className="sub" to="/silver">Silver Collection</Link>
+</li>
+            </ul>
+          </li>
+          <li><a className="sub1"  href="../contact/Contact.js">Contact</a>
+         </li>
+          <li>         <Link className="sub1"  to="/Aboutus"> About</Link>
+</li>
+<li><Link className="sub2" to="/feature">Benefits</Link>
+
+         </li>
+          <li>        <Link className="sub2" to="/term">Terms & Conditions</Link>
+</li>
+        </ul>
+      </div>
       
-      <img className='img-front' src={logo1} />
+    </div>
+  </nav>
+  
+</div>
+      
+      
           </div>
+
 
 
  
 
 
-
-          <div className="container-main2">
-         
-        <img className='img-front2' src={logo1} />
-        
-        <div className='center21-2-main'><b>Our Commitment<br/>to Quality</b></div>
-        <div className='center22-2-main'>We offer Ready to Assemble (RTA) cabinets that are KCMA <br/>certified. KCMA certified cabinets are recognized in the <br/>marketplace as a quality product able to perform after  a<br/> rigorous battery to tests simulating years of household use.</div>
-        <div className='center3-2-main'><b>BROWSE OUR CABINETS  </b></div>
-      
-        <Header/>
-
-          </div>
-     
+ 
  
          <div className="collection-container" >
            

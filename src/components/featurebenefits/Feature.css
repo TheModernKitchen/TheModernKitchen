@@ -43,9 +43,26 @@
       
       
     }
-  
+ 
+    .center-feature-2 {
+      position: absolute;
+      top: 0%;
+      width: 0%;
+      margin-left: 0%;
+      padding-left: .3vw;
+      padding-right: 3.5vw;
+      text-align: center;
+      font-size:0vw;
+      color: white;
+      background-color: rgba(242, 146, 29, 0.6);
+      opacity: 0.9;
+      font-family: 'Poppins', sans-serif;
+      
+      
+    }
+ 
     .label-feature-2 {
-        margin-top: 4%;
+        margin-top: -15%;
         width: 35%;
         margin-left: 11%;
         padding-top: .5%;
@@ -82,6 +99,27 @@
           font-size: 1vw;
           margin-top: -1.5vw;
       }
+      .center-feature-details-mbl{
+        background-color: rgba(51, 44, 46, 0.4);
+        height: auto; 
+        margin-top: 0%;
+        text-align: center;
+        width: 0%;
+        font-size:0vw;
+          margin-bottom: 0%;
+        text-align: left;
+        font-weight: 0;
+      padding-left: 0%;
+        
+      }
+      .center-feature-text-mbl{
+          padding: 0vw;
+          font-family: 'Poppins', sans-serif;
+          color: white;
+          font-size: 0vw;
+          margin-top: 0vw;
+      }
+    
       .column-feature1 {
         float: left;
         width: 78%;
@@ -101,18 +139,18 @@
       
       .feature-logo{
         width: 11vw;
-        margin-left: 37vw;
-        margin-top: 4.8vw;
+        margin-left: 33vw;
+        margin-top: 3vw;
       }
       .feature-logo2{
         width: 10vw;
-        margin-left: 37vw;
-        margin-top: 4.5vw;
+        margin-left: 33vw;
+        margin-top: 3vw;
       }
       .feature-logo3{
         width: 10vw;
-        margin-left: 37vw;
-        margin-top: 4vw;
+        margin-left: 33vw;
+        margin-top: 2vw;
       }
       .container-feature {
   position: relative;
@@ -137,10 +175,15 @@
   font-family: 'Poppins', sans-serif;
  font-size: 1.5vw;
 }
+.feature-h3-mbl{
+  font-family: 'Poppins', sans-serif;
+ font-size: 0vw;
+}
 .feature-in{
   font-family: 'Poppins', sans-serif;
  font-size: 1.5vw;
 margin-left: 11vw;
+margin-top: -3%;
 }
 .logo-img-feature { 
   width: 20%;
@@ -165,13 +208,22 @@ margin-left: 11vw;
 padding:2%;
 margin-left:15vw;}
 
-.mark-mr{
+.mark-mr1{
   padding-left: 2vw;
-  width: 9vw;
+  width: 10vw;
+}
+.mark-mr{
+  padding-left: 0vw;
+  width: 10vw;
 }
 .mark-mr2{
-  padding-left: 6vw;
+  margin-left: 0vw;
   width: 9vw;
+}
+
+.mark-mr3{
+  margin-left: -2vw;
+  width: 10vw;
 }
 .featurein{
   font-size: 1.5vw;
@@ -180,16 +232,21 @@ margin-left:15vw;}
   color: rgba(51, 44, 46, 1);
 
 }
-.vl {
+.vl-feature {
   border-top: 3px solid gray;
   width: 85%;
   margin-left: 6%;
 margin-bottom: 5vw;
 }
+.feature-logo-mbl1{
+  width: 0vw;
+  margin-left: 0vw;
+  margin-top: 0vw;
+}
 
 
 @media (max-width:800px) {
-  .center-feature {
+  .center-feature-2 {
     top: 60%;
     width: 46%;
     margin-left: 10%;
@@ -199,18 +256,178 @@ margin-bottom: 5vw;
     
     
   }
+  .center-feature {
+    position: absolute;
+    top: 0%;
+    width: 0%;
+    margin-left: 0%;
+    padding-left: .3vw;
+    padding-right: 3.5vw;
+    text-align: center;
+    font-size:0vw;
+    color: white;
+    background-color: rgba(242, 146, 29, 0.6);
+    opacity: 0.9;
+    font-family: 'Poppins', sans-serif;
+    
+    
+  }
   .label-feature-2 {
-    margin-top: -5%;
+    margin-top: -24%;
     width: 80%;
     margin-left: 10%;
     padding-top: .5%;
     padding-bottom: .5%;
     padding-left: .5%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     
     
   }
 
+  .container-feature {
+    position: relative;
+    text-align: left;
+    
+    width:0vw;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    
+    margin-bottom: 0%;
+  }
+   .feature-h3{
+     font-size:0vw;
+   }
+ 
+   
+   .center-feature-details-mbl{
+    background-color: rgba(51, 44, 46, 0.4);
+    height: auto;
+    margin-left: 6vw; 
+    margin-top: 4%;
+    text-align: center;
+    width: 85%;
+      margin-bottom: 2%;
+    text-align: center;
+    font-weight: 500;
+  padding-left: 2%;
+    
+  }
+  .center-feature-text-mbl{
+      padding: 1vw;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 3vw;
+      margin-top: -1.5vw;
+  }
+  .center-feature-details{
+    background-color: rgba(51, 44, 46, 0.4);
+    height: auto; 
+    margin-top: 0%;
+    text-align: center;
+    width: 0%;
+    font-size:0vw;
+      margin-bottom: 2%;
+    text-align: left;
+    font-weight: 500;
+  padding-left: 2%;
+    
+  }
+  .center-feature-text{
+      padding: 0vw;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 0vw;
+      margin-top: 0vw;
+  }
+  .feature-h3-mbl{
+    font-family: 'Poppins', sans-serif;
+   font-size: 3vw;
+   margin-top: 2vw;
+   margin-left: 6vw;
+  }
+   .feature-logo{
+    width: 0vw;
+    margin-left: 1vw;
+    margin-top: 3vw;
+  }
+   .feature-logo-mbl1{
+    width:40vw;
+    margin-left: 31vw;
+    margin-top: 3vw;
+  }
+  .feature-logo2{
+    width: 0vw;
+    margin-left: 33vw;
+    margin-top: 3vw;
+  }
+  .feature-logo3{
+    width: 0vw;
+    margin-left: 33vw;
+    margin-top: 2vw;
+  }
+  .pad-feature-mark{
+    padding:2%;
+    margin-top: 2%;
+    margin-left:0vw;}
+    
+    .mark-mr{
+      padding-left: 2vw;
+      width:35vw;
+
+      margin-bottom: 0vw;
+      margin-left: 5vw;
+    }
+    
+    .mark-mr2{
+      padding-left: 2vw;
+      margin-left: 5vw;
+      width: 35vw;
+    margin-top: 9vw;    }
+    .mark-mr3{
+      padding-left: 2vw;
+      margin-left: 5vw;
+      width: 35vw;
+    margin-top: -20vw;    }
+    
+.mark-mr1{
+  padding-left: 2vw;
+  width:35vw;
+
+  margin-bottom: 0vw;
+  margin-left: 5vw;
+}
+
+    .featurein{
+      font-size: 0vw;
+      font-weight: 600;
   
+      margin-left: 12vw;
+      color: rgba(51, 44, 46, 1);
+    
+    }
+    .feature-in{
+      font-size: 3vw;
+      font-weight: 600;
+      margin-top: 8vw;
+      margin-left: 8vw;
+      color: rgba(51, 44, 46, 1);
+    
+    }
+    
+    .vl-feature {
+      border-top: 0px solid gray;
+      width: 0%;
+      margin-left: 6%;
+    margin-bottom: 5vw;
+    }
+    
+    .column-feature-mark {
+      float: left;
+      width: 48%;
+      padding: 2px;
+    }
+    
+    
 }

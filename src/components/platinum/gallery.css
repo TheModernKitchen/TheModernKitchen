@@ -4,7 +4,7 @@
 .rope-gall1{
     background-color: rgba(217, 128, 70, 0.7);
     color: rgba(255, 255, 255, 1);
-    width: 30%;
+    width: 35%;
    padding: .8vw;
    height: auto;
     font-size: 1.5vw;
@@ -17,7 +17,7 @@
   .rope-gall3{
     background-color: rgba(208, 190, 175, 0.8);
     color: rgba(255, 255, 255, 1);
-    width: 34%;
+    width: 36%;
    padding: .8vw;
    height: auto;
     font-size: 1.5vw;
@@ -79,7 +79,7 @@
   .rope-gallt3{
     background-color: rgba(227, 214, 198, 0.8);
     color: rgba(255, 255, 255, 1);
-    width: 38%;
+    width: 42%;
    padding: .8vw;
    height: auto;
     font-size: 1.5vw;
@@ -151,7 +151,7 @@
 .rope-gallp5{
   background-color: rgba(80, 77, 84, 0.7);
   color: rgba(255, 255, 255, 1);
-  width: 40%;
+  width: 42%;
  padding: .8vw;
  height: auto;
   font-size: 1.5vw;
@@ -175,7 +175,7 @@
   .rope-gallg1header{
     background-color: rgba(221, 220, 217, 0.8);
     color: rgba(255, 255, 255, 1);
-    width: 25%;
+    width: 28%;
    padding: .8vw;
    height: auto;
     font-size: 1.5vw;
@@ -189,7 +189,7 @@
   .rope-gallg3header{
     background-color: rgba(83, 52, 44, 1);
     color: rgba(255, 255, 255, 1);
-    width: 35%;
+    width: 38%;
    padding: .8vw;
    height: auto;
     font-size: 1.5vw;
@@ -647,10 +647,10 @@ font-weight: 600;
 
 .ul1-gall-layout {
     
-  margin-left:0%;
+  margin-left:8%;
   font-size: 1vw;
   font-weight: 600;
-  margin-left: 0%;
+  margin-left: 5%;
   margin-top: 2%;
    width: 60vw;
   font-family: 'Poppins', sans-serif;
@@ -737,7 +737,7 @@ background-color: rgba(39, 9, 0, 1);
 }
 
 .rope-gallp5{
-  width: 99%;
+  width: 105%;
  font-size: 4vw;
  margin-left: -3vw;
 
@@ -771,14 +771,14 @@ background-color: rgba(39, 9, 0, 1);
 
   }  
   .rope-gall1-tit{
-    width: 99%;
+    width: 110%;
     font-size: 4vw;
     margin-left: -3vw;
 
 
   }
   .rope-gallt3{
-    width: 99%;
+    width: 109%;
     font-size: 4vw;
     margin-left: -3vw;
 
@@ -794,7 +794,7 @@ background-color: rgba(39, 9, 0, 1);
 
   }
   .top-left2-gall1-tit {
-    top: 58vw;
+    top: 64vw;
     left: -3vw;
     width: 90vw;
     padding: 4vw;
@@ -803,7 +803,7 @@ background-color: rgba(39, 9, 0, 1);
 
   }
   .top-left2-gallt3 {
-    top: 58vw;
+    top: 64vw;
     left: -3vw;
     width: 90vw;
     padding: 4vw;
@@ -821,7 +821,7 @@ background-color: rgba(39, 9, 0, 1);
 
   }
   .top-left2-gallp5 {
-    top: 58vw;
+    top: 65vw;
     left: -3vw;
     width: 90vw;
     padding: 4vw;
@@ -870,6 +870,7 @@ background-color: rgba(39, 9, 0, 1);
   }
   .pl2-gall1{
     width: 39vw;
+    margin-top: 20%;
  
 }
   .pl3-gallsilver1{
@@ -935,5 +936,9 @@ background-color: rgba(39, 9, 0, 1);
     padding-left: 5vw;
     font-size: 3vw;
      }
- 
+     .container-gall1 {
+      margin-top: -17.5vw;
+      
+    }
+  
 }

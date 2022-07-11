@@ -1,7 +1,7 @@
 
 
   
-  .nav-main {
+  .nav-main-main {
     transition: all 0.1s linear;
     position: absolute;
     z-index: 2000;
@@ -12,7 +12,6 @@
     font-family: 'Poppins';
 
     opacity: 0.8;
-    background-color:rgba(51, 44, 46, 0.6);
   }
   .nav-main-2 {
     transition: all 0.1s linear;
@@ -38,7 +37,7 @@
     padding-top: 80px;
   }
   
-  .container-main1 {
+  .container-main-main {
     position: relative;
     font-size: 100%;
     height: 500%;
@@ -73,8 +72,26 @@
     height: auto;
     opacity: 1;
   }
-  .img-front { 
+  .img-front-main { 
+    width: 110%;
+    height: auto;
+    opacity: 1;
+  }
+  .img-front-main-tit { 
     width: 100%;
+    padding-bottom: 12%;
+    height: auto;
+    opacity: 1;
+  }
+  .img-front-main-contact { 
+    width: 120%;
+    padding-bottom: 12%;
+    height: auto;
+    opacity: 1;
+  }
+  .img-front-main-term { 
+    width: 120%;
+    padding-bottom: 18%;
     height: auto;
     opacity: 1;
   }
@@ -87,7 +104,7 @@
     width: 20vw;
   }
   
-  .center21-main {
+  .center21-main-main {
     position: absolute;
     top: 30%;
     width: 35%;
@@ -101,7 +118,7 @@
     font-family: 'Poppins', sans-serif;
     z-index: 2000;
   }
-  .center22-main {
+  .center22-main-main {
     position: absolute;
     top: 56%;
     width: 64%;
@@ -118,7 +135,7 @@
     
   }
   
-  .center3-main {
+  .center3-main-main {
     position: absolute;
     top: 79%;
     width: 20%;
@@ -140,7 +157,7 @@ font-size: bold;
   
     
   }
-  .center3-main:hover{
+  .center3-main-main:hover{
     background-color: rgba(242, 146, 29, 0.8);
    color: white;
     opacity: 1;
@@ -275,8 +292,110 @@ font-size: bold;
     color: rgba(242, 146, 29, 1);
     font-size: 20px;
  }
-
-
+ @media (max-width:1200px){
+  .img-front-main { 
+    width: 110%;
+    height: auto;
+    opacity: 1;
+  }
+  .img-front-main-term { 
+    width: 150%;
+    padding-bottom: 17%;
+    
+  }
+}
+@media (max-width:1020px){
+  .img-front-main { 
+    width: 115%;
+    height: auto;
+    opacity: 1;
+  }
+}
+@media (max-width:900px){
+  .img-front-main { 
+    width: 116%;
+    height: auto;
+    opacity: 1;
+  }
+}
+@media (max-width:1600px){
+  .center21-main-main {
+    top: 35%;
+    }
+  .center22-main-main {
+    top: 61%;
+     
+  }
+  
+  .center3-main-main {
+    top: 87%;
+   
+    
+  } 
+}
+@media (max-width:1300px){
+  .center21-main-main {
+    top: 38%;
+    }
+  .center22-main-main {
+    top: 64%;
+     
+  }
+  
+  .center3-main-main {
+    top: 90%;
+   
+    
+  } 
+}
+@media (max-width:1200px){
+  .center21-main-main {
+    top: 38%;
+    }
+  .center22-main-main {
+    top: 64%;
+     
+  }
+  
+  .center3-main-main {
+    top: 90%;
+   
+    
+  } 
+ 
+}
+@media (max-width:1200px){
+  .center21-main-main {
+    top: 43%;
+    }
+  .center22-main-main {
+    top: 68%;
+     
+  }
+  
+  .center3-main-main {
+    top: 92%;
+   
+    
+  } 
+ 
+}
+@media (max-width:900px){
+  .center21-main-main {
+    top: 45%;
+    }
+  .center22-main-main {
+    top: 68%;
+     
+  }
+  
+  .center3-main-main {
+    top: 92%;
+   
+    
+  } 
+ 
+}
  @media (max-width:800px){
    
   .img-front2 { 
@@ -284,6 +403,7 @@ font-size: bold;
     height: auto;
     opacity: 1;
   }
+  
   
   
   .nav-main {
@@ -323,28 +443,28 @@ font-size: bold;
     padding-top: 0px;
   }
   
-  .center21-2-main {
+  .center21-main-main {
     position: absolute;
-    top: 34%;
-    width: 40%;
+    top: 30%;
+    width: 45%;
     font-size: bold;
-    margin-left: 24%;
+    margin-left: 22%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 4.5vw;
     color: white;
     background-color: rgba(242, 146, 29, 0.7);
     opacity: 0.9;
     font-family: 'Poppins', sans-serif;
     z-index: 2000;
   }
-  .center22-2-main {
+  .center22-main-main {
     position: absolute;
-    top: 60%;
-    width: 64%;
+    top: 55%;
+    width: 66%;
     margin-left: 11%;
     text-align: center;
     padding: 1%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     z-index: 2000;
     color: white;
     background-color:rgba(51, 44, 46, 0.4);
@@ -354,19 +474,19 @@ font-size: bold;
     
   }
   
-  .center3-2-main {
+  .center3-main-main {
     position: absolute;
-    top: 90%;
-    width: 30%;
+    top: 85%;
+    width: 35%;
     padding: 2%;
 
 font-size: bold;
-    margin-left: 30%;
+    margin-left: 27%;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family: 'Poppins', sans-serif;    
     color: white;
-    padding-top: 0.2%;
+    padding-top: 0.5%;
     padding-bottom: 0.3%;
     z-index: 2000;
 
@@ -376,7 +496,7 @@ font-size: bold;
   
     
   }
-  .center3-2-main:hover{
+  .center3-main-main:hover{
     background-color: rgba(242, 146, 29, 0.8);
    color: white;
     opacity: 1;
@@ -384,78 +504,31 @@ font-size: bold;
   }
   
   
-  .container-main2 {
+  .container-main-main {
     position: relative;
     font-size: 100%;
-    height: 500%;
+    height: 900%;
     width: 120%;
     margin-bottom: 10%;
   }
-  .container-main1 {
-    position:relative ;
-    font-size: 0%;
-    height: 0%;
-    width: 0%;
-  }
  
-  .center21-main {
-    position: absolute;
-    top: 0%;
-    width: 0%;
-    font-size: bold;
-    margin-left: 0%;
-    text-align: center;
-    font-size: 0vw;
-    color: white;
-    background-color: rgba(242, 146, 29, 0.7);
-    opacity: 0;
-    font-family: 'Poppins', sans-serif;
-    z-index:0;
-  }
-  .center22-main {
-    position: absolute;
-    top: 0%;
-    width: 0%;
-    margin-left: 0%;
-    text-align: center;
-    padding: 0%;
-    font-size: 0vw;
-    z-index: 0;
-    color: white;
-    background-color:rgba(51, 44, 46, 0.4);
-    font-family: 'Poppins', sans-serif;
-    opacity: 0;
-   font-weight: 0;
-    
-  }
   
-  .center3-main {
-    position: absolute;
-    top: 0%;
-    width: 0%;
-    padding: 0%;
-
-font-size: bold;
-    margin-left: 0%;
-    text-align: center;
-    font-size: 0vw;
-    font-family: 'Poppins', sans-serif;    
-    color: white;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    z-index: 0;
-
-    background-color: rgba(242, 146, 29, 0.6);
-   
+  .img-front-main { 
+    width: 170%;
     opacity: 1;
-  
-    
   }
-  .center3-main:hover{
-    background-color: rgba(242, 146, 29, 0.8);
-   color: white;
-    opacity: 0;
-   
+  .img-front-main-tit { 
+    width: 150%;
+    padding-bottom: 18%;
+    opacity: 1;
   }
-   
+  .img-front-main-contact { 
+    width: 178%;
+    padding-bottom: 18%;
+     }
+     .img-front-main-term { 
+      width: 230%;
+      padding-bottom: 17%;
+      
+    }
 }

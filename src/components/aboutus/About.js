@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"; 
 import React from 'react';
-
+import { useEffect } from "react";
 import aboutus from '../mainpage/images/aboutus.svg' ;
-import kitchenlogo from '../mainpage/images/kitchenlogo.png' ;
+import kitchenlogo from '../mainpage/images/kitchenlogo-min.png' ;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import footerlogo from '../mainpage/images/footerlogo.svg' ;
 import Footer from "../footer/Footer";
 
-import '../featurebenefits/Feature.css'
+import '../featurebenefits/feature.css'
+import  '../contact/ContactHeader.css'
 
 import './About.css';
 import {Helmet}from"react-helmet-async";
@@ -17,6 +17,35 @@ import {Helmet}from"react-helmet-async";
 
 
 const About = () => {
+  useEffect(() => {
+    // search-box open close js code
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+    
+    // sidebar open close js code
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+    navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+    }
+    
+    
+    // sidebar submenu open close js code
+    
+    
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+     navLinks.classList.toggle("show3");
+    }
+    
+    
+       }, []);
+   
   return (
     
     <div>
@@ -28,35 +57,65 @@ const About = () => {
      <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
        </Helmet>        
-        <div className="container">      
-        <div className="nav-main">
-           
-            <div>
-            <img className='logo-img-m' src={kitchenlogo} />
-              </div>   
-              <div className='links-main'>
-          
-            
-          <Link className="link-main" to="/"> Home</Link>
-          <div className="dropdown">
-          <Link className="link-main" to="#">Cabinets&nbsp;&nbsp;<FontAwesomeIcon icon="fas fa-caret-down" /></Link>        <div className="dropdown-content">
-            <Link className="sub" to="/titainum">Titaninum Collection</Link>
-            <Link className="sub" to="/platinum">Platinum Collection</Link>
-            <Link className="sub" to="/gold">Gold Collection</Link>
-            <Link className="sub" to="/silver">Silver Collection</Link>
-              </div>
-           </div>
-          <Link className="link-main" to="/Contact"> Contact</Link>
-          <Link className="link-main" to="/Aboutus"> About</Link>
-               
-           </div>
-          </div>
   
-  <img className='img' src={aboutus} />
-        <div className='center-about'><b>About Us</b></div>
-           
-          </div>
+       <div className="container-main-main">
+    <img className='img-front-main-contact' src={aboutus} />
+    <div className='center-about'><b>About Us</b></div>
+       
+ 
+  <div className="nav-main-main">
+    <nav className="nav">
+    <div class="navbar">
+ 
+      <i class='bx bx-menu'></i>
+      <div class="logo2"><img className="logo-main-main-tit"  src={kitchenlogo} /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links2">
+          <li>    <Link className="sub1" to="/"> Home</Link>
+       
+       </li>
+         
+          <li>
+          <Link className="sub1" to="#">Cabinets</Link>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li>   <Link className="sub" to="/titainum">Titaninum Collection</Link>
+        </li>
+              <li>  <Link className="sub" to="/platinum">Platinum Collection</Link>
+         </li>
+              <li><Link className="sub" to="/gold">Gold Collection</Link>
+  </li>
+              <li>           <Link className="sub" to="/silver">Silver Collection</Link>
+</li>
+            </ul>
+          </li>
+          <li><a className="sub1"  href="../contact/Contact.js">Contact</a>
+             </li>
+          <li>         <Link className="sub1"  to="/Aboutus"> About</Link>
+</li>
+<li><Link className="sub2" to="/feature">Benefits</Link>
 
+         </li>
+          <li>        <Link className="sub2" to="/term">Terms & Conditions</Link>
+</li>
+
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  
+</div>
+      
+      
+          </div>
+        
+       
+       
 
 
 <div className="center-about-details">

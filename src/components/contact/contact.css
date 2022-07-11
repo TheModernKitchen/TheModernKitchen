@@ -17,13 +17,13 @@
   }
   .center-contact2 {
     position: absolute;
-    top: 19vw;
+    top: 20vw;
     width: 45%;
     margin-left: 8%;
     text-align: left;
     font-weight:500 ;
     padding: .5%;
-    font-size: .9vw;
+    font-size: 1.5vw;
     z-index: 2000;
     color: white;
     background-color:rgba(51, 44, 46, 0.4);
@@ -55,21 +55,40 @@
   display: table;
   clear: both;
 }
+.column-map-2 {
+  float: left;
+  width: 0%;
+  margin-left: 8%;
+  margin-top: -19%;
+
+ }
+
+/* Clear floats after the columns */
+.row-map-2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .vl {
   border-top: 3px solid gray;
   width: 85%;
   margin-left: 8%;
  
 }
-.vl2 {
+.vl-con {
   border-top: 3px solid gray;
   width: 85%;
   margin-left: 8%;
-  margin-top: -8vw;
+ margin-top: -8vw;
 
 }
 .map-img{
   width: 40%;
+  margin-left: 15%;
+  margin-top: 4.5vw;
+}
+.map-img-2{
+  width: 0%;
   margin-left: 15%;
   margin-top: 4.5vw;
 }
@@ -98,6 +117,36 @@
 .contact-icon:hover{
   color: black;
 }
+.map-img{
+  width: 40%;
+  margin-left: 15%;
+  margin-top: 4.5vw;
+}
+
+.icons-contact-2{
+  margin-left: 16%;
+  padding: 1%;
+  color: black;
+  font-weight: 500;
+  font-size: 0vw;
+}
+.icons-contact2-2{
+  margin-left: 0%;
+  padding: 0%;
+  margin-top: 0%;
+  color: black;
+  font-weight: 500;
+  font-size: 0vw;
+}
+.contact-icon-2{
+  color: black;
+   font-weight: 0px;
+  margin-left: 0%;
+  font-size: 0vw;
+}
+.contact-icon-2:hover{
+  color: black;
+}
 .label-text{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -108,4 +157,152 @@
   font-weight: 600;
   margin-left: 29vw;
   font-size: .7vw;
+}
+.map-size{
+  width: 0%;
+}
+.f-size1{
+font-size: 15px;
+margin-right: 10%;
+}
+.f-size2{
+  font-size: 0px;
+  }
+@media (max-width:800px) {
+  
+  .f-size2{
+    font-size: 15px;
+    margin-top: -50%;
+    width: 80%;
+    }
+    .f-size1{
+      font-size: 0px;
+      }
+  .center-contact{
+    position: absolute;
+    top: 20vw;
+    width: 39%;
+    margin-left: 8%;
+    text-align: left;
+    font-size: 5vw;
+    padding-left: 2vw;
+      
+    color: white;
+    background-color: rgba(242, 146, 29, 0.6);
+    opacity: 1.3;
+    font-family: 'Poppins', sans-serif;
+    z-index: 2000;
+  }
+  .center-contact2 {
+    position: absolute;
+    top: 32vw;
+    width: 60%;
+    margin-left: 8%;
+    text-align: left;
+    font-weight:500 ;
+    padding: .5%;
+    font-size: 3vw;
+    z-index: 2000;
+    color: white;
+    background-color:rgba(51, 44, 46, 0.4);
+    font-family: 'Poppins', sans-serif;
+
+    opacity: 0.9;
+  
+    
+  }
+
+
+  .label-text{
+    font-weight: 600;
+    font-size: 3vw;
+    margin-left: -7vw;
+  }
+  .label-text2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 0vw;
+    font-size: 0vw;
+  }
+  .column-map {
+    float: left;
+    width: 0%;
+    margin-left: 0%;
+    margin-top: -30%;
+  
+   }
+   .contact-icon{
+    color: black;
+     font-weight: 0px;
+    margin-left: 0%;
+    font-size: 0vw;
+  }
+  .icons-contact{
+    margin-left: 0%;
+    padding: 0%;
+    color: black;
+    font-weight: 500;
+    font-size:0vw;
+  }
+  .icons-contact2{
+    margin-left: 0%;
+    padding: 0%;
+    margin-top: 0%;
+    color: black;
+    font-weight: 0;
+    font-size: 0vw;
+  }
+
+  .column-map-2 {
+    float: left;
+    width: 110%;
+    margin-left: 6%;
+    margin-top: -5%;
+  
+   }
+  
+  /* Clear floats after the columns */
+  .row-map-2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .icons-contact-2{
+    margin-left: 0%;
+    padding: 1%;
+    color: black;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .icons-contact2-2{
+    margin-left: 0%;
+    padding: 1%;
+    margin-top: -1%;
+    color: black;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .contact-icon-2{
+    color: black;
+     font-weight: 2px;
+    margin-left: 2%;
+    font-size: 2vw;
+  }
+  .contact-icon-2:hover{
+    color: black;
+  }
+  .map-img-2{
+    width: 40%;
+    margin-left: 0%;
+    margin-top: 10.5vw;
+  }
+  .vl2 {
+    border-top: 0px solid gray;
+    width: 0%;
+    margin-left: 0%;
+    margin-top: 0vw;
+  
+  } 
 }
